@@ -1,19 +1,20 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.7.0;
 
+// import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 // has a map of addresses -> percentages
 import "./Record.sol";
 
 contract LabelContract {
     // owner of the label
-    address public owner;
+    // address public owner;
     
     // isrcs -> contract address
     mapping(string => address) public records;
     
-    constructor() {
-        owner = msg.sender;
-    }
+    // constructor() {
+    //     owner = msg.sender;
+    // }
     
     /** 
      * @dev Create a new record contract.
